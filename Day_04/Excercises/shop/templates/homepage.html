@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Add Item</h1>
+        <form method="POST">
+            <input type="text" name="shop" placeholder="New item">
+            <button type="submit">Add</button>
+        </form>
+
+    <h3>Shopping List</h3>
+
+        {% for item in shop %}
+
+            <form method="POST" action="/delete/item/" style="display:inline;">
+                <table>
+                 <tr>
+                     <td> <input type="hidden" name="shop" value="{{ item }}"> </td>
+                     <td> <input type="checkbox"> {{ item }} </td>
+                     <td> <button type="submit">Delete</button> </td>
+                 </tr>
+                </table>
+            </form>
+
+        {% endfor %}
+
+{% endblock %}

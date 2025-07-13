@@ -46,15 +46,15 @@ class Warrior(Character):
         print()
 
 
-knight1 = Knight()
+knight2 = Knight()
 mage1 = Mage()
 warrior1 = Warrior()
 
 print("Knight vs Mage")
-knight1.attack(mage1)
+knight2.attack(mage1)
 
 print("Mage vs Warrior")
 mage1.attack(warrior1)
 
 print("Warrior vs Knight")
-warrior1.attack(knight1)
+warrior1.attack(knight2)

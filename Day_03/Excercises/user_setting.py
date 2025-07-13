@@ -12,7 +12,7 @@ root.geometry("300x200")
 #Name
 name_label = tkinter.Label(root, text= "Name:", width=15, height=2)
 name_label.grid(row=1, column=1)
-#name_label.pack()
+
 
 name = tkinter.Entry(root)
 name.grid(row=1, column=2)
